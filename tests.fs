@@ -13,6 +13,7 @@ let test_suite =
     (1,"1")
     (3, "fizz")
     (5, "buzz")
+    (15, "fizzbuzz")
     ]
   cases
   |> List.map (fun (input, output) -> (fizzBuzz input, output))  
