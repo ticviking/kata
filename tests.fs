@@ -14,10 +14,11 @@ let test_suite =
     ]
   cases
   |> List.map (fun (input, output) -> (fizzBuzz input, output))  
+  |> List.map (fun (actual, expected) -> assertEqual expected actual)
 
 
 [<EntryPoint>]
 let main argv =
     test_suite
-    |> printf "%O"
+    |> List.map (printf "%O\n")
     0
