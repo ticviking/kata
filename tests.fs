@@ -1,3 +1,5 @@
+open FizzBuzz
+
 let assertEqual expected actual =
   match actual with
     | a when a = expected -> "Passed!"
@@ -11,6 +13,7 @@ let test_suite =
     (1,1)
     ]
   cases
+  |> List.map (fun (input, output) -> (fizzBuzz input, output))  
 
 
 [<EntryPoint>]
