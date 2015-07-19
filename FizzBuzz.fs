@@ -1,4 +1,4 @@
 module FizzBuzz
 
 let fizzBuzz n =
-  0
+  n

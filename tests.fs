@@ -21,4 +21,5 @@ let test_suite =
 let main argv =
     test_suite
     |> List.map (printf "%O\n")
+    |> ignore
     0
