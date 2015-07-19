@@ -12,7 +12,7 @@ let test_suite =
   let cases =[
     (1,"1")
     (3, "fizz")
-
+    (5, "buzz")
     ]
   cases
   |> List.map (fun (input, output) -> (fizzBuzz input, output))  
